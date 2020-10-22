@@ -4,9 +4,7 @@
   border: 0;
   box-sizing: border-box;
 }
-:root {
-  /* scroll-snap-type: y mandatory; */
-}
+
 html,
 body {
   height: 100%;
