@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --progressValue: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background-color: rebeccapurple;
+  color: white;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header::after,
+.header::before {
+  height: 8px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  transition: width 0.2s linear;
+}
+
+.header::after {
+  background-color: gainsboro;
+}
+
+.header::before {
+  background-color: greenyellow;
+  width: var(--progressValue);
+  z-index: 1;
+}
+
+.container {
+  margin-top: 90px;
+
+  padding: 50px 0 100px 0;
+  width: 80%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  text-align: center;
+}
+
+.container h3 {
+  font-size: 30px;
+}
+
+.container p {
+  font-size: 20px;
+  margin-top: 15px;
+}
