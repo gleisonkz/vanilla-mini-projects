@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: column nowrap;
+        font-family: monospace;
+        height: 100%;
+        overflow-x: hidden;
+      }
+
+      .container {
+        display: flex;
+        flex-flow: column nowrap;
+
+        scroll-snap-type: y mandatory;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+        min-width: 100%;
+        outline: 1px dashed lightgray;
+      }
+
+      .container > div {
+        text-align: center;
+        scroll-snap-align: start;
+        flex: none;
+        overflow-x: hidden;
+        font-size: 250px;
+        width: 100vw;
+        height: 100%;
+      }
+
+      .container > div:nth-child(even) {
+        background-color: #87ea87;
+      }
+
+      .container > div:nth-child(odd) {
+        background-color: #87ccea;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container y mandatory-scroll-snapping">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
+</html>

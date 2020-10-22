@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* scroll-snap-type: y mandatory; */
+}
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 200px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  min-width: 100%;
+  height: 100%;
+  outline: 1px dashed lightgray;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  scroll-snap-align: start;
+}
+.area-1 {
+  background-color: pink;
+}
+.area-2 {
+  background-color: rebeccapurple;
+}
+.area-3 {
+  background-color: coral;
+}
+.area-4 {
+  background-color: aquamarine;
+}
