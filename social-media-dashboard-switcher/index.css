@@ -22,6 +22,27 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  background-color: var(--background-color);
+}
+
+body,
+html,
+.container {
+  transition: background-color 0.2s;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+/* ========================================================================== /
+/ GROUP-STYLES  /
+/ ========================================================================== */
+
 .info__sub-title,
 .header__text,
 .body__text,
@@ -30,11 +51,20 @@
   color: var(--color-text);
 }
 
-body {
-  height: 100%;
-  width: 100%;
-  font-family: "Inter", sans-serif;
+.info__sub-title,
+.toggle__text,
+.header__text,
+.body__title,
+.footer__text,
+.overview__title,
+.bottom__quantity,
+.percentage__text {
+  font-weight: bold;
 }
+
+/* ========================================================================== /
+/ END-GROUP-STYLES /
+/ ========================================================================== */
 
 .container {
   height: 100%;
@@ -75,7 +105,6 @@ body {
 
 .info__sub-title {
   font-size: 15px;
-  font-weight: bold;
 }
 
 .top-bar__toggle {
@@ -83,10 +112,6 @@ body {
   justify-content: space-between;
 
   margin: 10px 0;
-}
-
-.toggle__text {
-  font-weight: bold;
 }
 
 .toggle__container {
@@ -146,6 +171,7 @@ body {
 .social-media__content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* ========================================================================== /
@@ -160,14 +186,15 @@ body {
   position: relative;
 
   width: 100%;
-  height: 280px;
-  background-color: var(--color-card-bg);  
+  height: 200px;
+  background-color: var(--color-card-bg);
   border-radius: 10px;
   margin-top: 20px;
+  max-width: 350px;
 }
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 6px;
@@ -186,11 +213,10 @@ body {
   background-color: hsl(203, 89%, 53%);
 }
 
-.card--instagram.card::before{  
-  background: linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%));   
-
+.card--instagram.card::before {
+  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 }
-.card--youtube.card::before{
+.card--youtube.card::before {
   background-color: hsl(348, 97%, 39%);
 }
 
@@ -207,17 +233,12 @@ body {
   justify-content: space-between;
 }
 
-.header__text {
-  font-weight: bold;
-}
-
 .card__body {
   flex-direction: column;
 }
 
 .body__title {
   font-size: 50px;
-  font-weight: bold;
   color: var(--color-title);
 }
 
@@ -228,10 +249,6 @@ body {
 
 .footer__image {
   margin-right: 5px;
-}
-
-.footer__text {
-  font-weight: bold;
 }
 
 .footer__text--red {
@@ -262,7 +279,6 @@ body {
 }
 
 .overview__title {
-  font-weight: bold;
   font-size: 30px;
   color: var(--color-title);
 }
@@ -271,6 +287,7 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .overview__card-status {
@@ -282,6 +299,8 @@ body {
   justify-content: space-between;
   flex-direction: column;
   padding: 20px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .card-status__top,
@@ -294,10 +313,6 @@ body {
 
 .top__title {
   color: var(--color-title);
-}
-
-.card-status__bottom > * {
-  font-weight: bold;
 }
 
 .bottom__quantity {
@@ -317,4 +332,165 @@ body {
 
 /* ========================================================================== /
 / END-CONTAINER OVERVIEW/
+/ ========================================================================== */
+
+/* ========================================================================== /
+/ TABLET/
+/ ========================================================================== */
+
+@media screen and (min-width: 730px) and (max-width: 999px) {
+  .container {
+    padding: 20px 60px;
+  }
+
+  .card,
+  .overview__card-status {
+    max-width: 293px;
+  }
+
+  .overview__card-status {
+    min-width: 250px;
+  }
+
+  .overview__card-status + .overview__card-status {
+    margin-left: 0;
+  }
+
+  .social-media__content,
+  .overview__content {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .social-media__top-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info__title,
+  .overview__title {
+    font-size: 20px;
+  }
+
+  .top-bar__info {
+    border: 0;
+  }
+
+  .info__sub-title,
+  .toggle__text {
+    font-size: 12px;
+  }
+
+  .toggle__text {
+    margin-right: 10px;
+  }
+
+  .top-bar__toggle {
+    margin: 0;
+    align-items: center;
+  }
+
+  .toggle__container {
+    height: 24px;
+    width: 48px;
+  }
+
+  .toggle__switch:before {
+    height: 20px;
+    width: 20px;
+    right: 3px;
+    bottom: 3px;
+  }
+
+  .toggle__input:checked + .toggle__switch::before {
+    transform: translateX(-22px);
+  }
+}
+
+/* ========================================================================== /
+/ END-TABLET /
+/ ========================================================================== */
+
+/* ========================================================================== /
+/ DESKTOP /
+/ ========================================================================== */
+
+@media screen and (min-width: 1000px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    padding: 20px 80px;
+    max-width: 1200px;
+  }
+
+  .card {
+    max-width: 240px;
+  }
+
+  .overview__card-status {
+    max-width: 244px;
+  }
+
+  .overview__card-status + .overview__card-status {
+    margin-left: 0;
+  }
+
+  .social-media__content,
+  .overview__content {
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  .social-media__top-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info__title,
+  .overview__title {
+    font-size: 20px;
+  }
+
+  .top-bar__info {
+    border: 0;
+  }
+
+  .info__sub-title,
+  .toggle__text {
+    font-size: 12px;
+  }
+
+  .toggle__text {
+    margin-right: 10px;
+  }
+
+  .top-bar__toggle {
+    margin: 0;
+    align-items: center;
+  }
+
+  .toggle__container {
+    height: 24px;
+    width: 48px;
+  }
+
+  .toggle__switch:before {
+    height: 20px;
+    width: 20px;
+    right: 3px;
+    bottom: 3px;
+  }
+
+  .toggle__input:checked + .toggle__switch::before {
+    transform: translateX(-22px);
+  }
+}
+
+/* ========================================================================== /
+/ END-DESKTOP /
 / ========================================================================== */
