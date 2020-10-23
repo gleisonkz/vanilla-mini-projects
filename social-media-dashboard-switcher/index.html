@@ -1,198 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-  <link rel="stylesheet" href="index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <div class="container">
+      <div class="container__social-media">
+        <div class="social-media__top-bar">
+          <div class="top-bar__info">
+            <h1 class="info__title">Social Media Dashboard</h1>
+            <span class="info__sub-title">Total Followers: 23,004</span>
+          </div>
+          <div class="top-bar__toggle">
+            <span class="toggle__text">Dark Mode</span>
 
-<body>
-  <div class="container">
-    <div class="container__social-media">
-      <div class="social-media__top-bar">
-        <div class="top-bar__info">
-          <h1 class="info__title">Social Media Dashboard</h1>
-          <span class="info__sub-title">Total Followers: 23,004</span>
+            <label class="toggle__container">
+              <input class="toggle__input" type="checkbox" />
+              <span class="toggle__switch"></span>
+            </label>
+          </div>
         </div>
-        <div class="top-bar__toggle">
-          <span class="toggle__text">Dark Mode</span>
-          <input class="toggle__button" type="checkbox">
+        <div class="social-media__content">
+          <div class="card">
+            <div class="card__header">
+              <img class="header__icon" src="images/icon-facebook.svg" alt="Icone Facebook" />
+              <span class="header__text">@nathanf</span>
+            </div>
+            <div class="card__body">
+              <span class="body__title">1987</span>
+              <span class="body__text">Followers</span>
+            </div>
+            <div class="card__footer">
+              <img class="footer__image" src="images/icon-up.svg" alt="Status" />
+              <span class="footer__text footer__text--green">12 Today</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img class="header__icon" src="images/icon-twitter.svg" alt="Icone Facebook" />
+              <span class="header__text">@nathanf</span>
+            </div>
+            <div class="card__body">
+              <span class="body__title">1044</span>
+              <span class="body__text">Followers</span>
+            </div>
+            <div class="card__footer">
+              <img class="footer__image" src="images/icon-up.svg" alt="Status" />
+              <span class="footer__text footer__text--green">99 Today</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img class="header__icon" src="images/icon-instagram.svg" alt="Icone Facebook" />
+              <span class="header__text">@nathanf</span>
+            </div>
+            <div class="card__body">
+              <span class="body__title">11k</span>
+              <span class="body__text">Followers</span>
+            </div>
+            <div class="card__footer">
+              <img class="footer__image" src="images/icon-down.svg" alt="Status" />
+              <span class="footer__text footer__text--red">1099 Today</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img class="header__icon" src="images/icon-youtube.svg" alt="Icone Facebook" />
+              <span class="header__text">Nathan F.</span>
+            </div>
+            <div class="card__body">
+              <span class="body__title">8239</span>
+              <span class="body__text">Subscribers</span>
+            </div>
+            <div class="card__footer">
+              <img class="footer__image" src="images/icon-up.svg" alt="Status" />
+              <span class="footer__text footer__text--green">144 Today</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="social-media__content">
-        <div class="card">
-          <div class="card__header">
-            <img class="header__icon" src="images/icon-facebook.svg" alt="Icone Facebook">
-            <span class="header__text">@nathanf</span>
+      <div class="container__overview">
+        <h1 class="overview__title">Overview - Today</h1>
+        <div class="overview__content">
+          <div class="overview__card-status">
+            <div class="card-status__top">
+              <span class="top__title">Page Views</span>
+              <img class="top__image" src="images/icon-facebook.svg" alt="" />
+            </div>
+            <div class="card-status__bottom">
+              <span class="bottom__quantity">87</span>
+              <div class="bottom__percentage">
+                <img class="percentage__image" src="images/icon-up.svg" alt="" />
+                <span class="percentage__text footer__text--green">3%</span>
+              </div>
+            </div>
           </div>
-          <div class="card__body">
-            <span class="body__title">1987</span>
-            <span class="body__text">Followers</span>
+          <div class="overview__card-status">
+            <div class="card-status__top">
+              <span class="top__title">Likes</span>
+              <img class="top__image" src="images/icon-facebook.svg" alt="" />
+            </div>
+            <div class="card-status__bottom">
+              <span class="bottom__quantity">52</span>
+              <div class="bottom__percentage">
+                <img class="percentage__image" src="images/icon-down.svg" alt="" />
+                <span class="percentage__text footer__text--red">2%</span>
+              </div>
+            </div>
           </div>
-          <div class="card__footer">
-            <img class="footer__image" src="images/icon-up.svg" alt="Status">
-            <span class="footer__text footer__text--green">12 Today</span>
+          <div class="overview__card-status">
+            <div class="card-status__top">
+              <span class="top__title">Likes</span>
+              <img class="top__image" src="images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="card-status__bottom">
+              <span class="bottom__quantity">5462</span>
+              <div class="bottom__percentage">
+                <img class="percentage__image" src="images/icon-up.svg" alt="" />
+                <span class="percentage__text footer__text--green">2257%</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card__header">
-            <img class="header__icon" src="images/icon-twitter.svg" alt="Icone Facebook">
-            <span class="header__text">@nathanf</span>
+          <div class="overview__card-status">
+            <div class="card-status__top">
+              <span class="top__title">Profile Views</span>
+              <img class="top__image" src="images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="card-status__bottom">
+              <span class="bottom__quantity">52k</span>
+              <div class="bottom__percentage">
+                <img class="percentage__image" src="images/icon-up.svg" alt="" />
+                <span class="percentage__text footer__text--green">1375%</span>
+              </div>
+            </div>
           </div>
-          <div class="card__body">
-            <span class="body__title">1044</span>
-            <span class="body__text">Followers</span>
+          <div class="overview__card-status">
+            <div class="card-status__top">
+              <span class="top__title">Retweets</span>
+              <img class="top__image" src="images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="card-status__bottom">
+              <span class="bottom__quantity">117</span>
+              <div class="bottom__percentage">
+                <img class="percentage__image" src="images/icon-up.svg" alt="" />
+                <span class="percentage__text footer__text--green">303%</span>
+              </div>
+            </div>
           </div>
-          <div class="card__footer">
-            <img class="footer__image" src="images/icon-up.svg" alt="Status">
-            <span class="footer__text footer__text--green">99 Today</span>
+          <div class="overview__card-status">
+            <div class="card-status__top">
+              <span class="top__title">Likes</span>
+              <img class="top__image" src="images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="card-status__bottom">
+              <span class="bottom__quantity">507</span>
+              <div class="bottom__percentage">
+                <img class="percentage__image" src="images/icon-up.svg" alt="" />
+                <span class="percentage__text footer__text--green">553%</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card__header">
-            <img class="header__icon" src="images/icon-instagram.svg" alt="Icone Facebook">
-            <span class="header__text">@nathanf</span>
+          <div class="overview__card-status">
+            <div class="card-status__top">
+              <span class="top__title">Likes</span>
+              <img class="top__image" src="images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="card-status__bottom">
+              <span class="bottom__quantity">107</span>
+              <div class="bottom__percentage">
+                <img class="percentage__image" src="images/icon-down.svg" alt="" />
+                <span class="percentage__text footer__text--red">19%</span>
+              </div>
+            </div>
           </div>
-          <div class="card__body">
-            <span class="body__title">11k</span>
-            <span class="body__text">Followers</span>
-          </div>
-          <div class="card__footer">
-            <img class="footer__image" src="images/icon-down.svg" alt="Status">
-            <span class="footer__text footer__text--red">1099 Today</span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__header">
-            <img class="header__icon" src="images/icon-youtube.svg" alt="Icone Facebook">
-            <span class="header__text">Nathan F.</span>
-          </div>
-          <div class="card__body">
-            <span class="body__title">8239</span>
-            <span class="body__text">Subscribers</span>
-          </div>
-          <div class="card__footer">
-            <img class="footer__image" src="images/icon-up.svg" alt="Status">
-            <span class="footer__text footer__text--green">144 Today</span>
+          <div class="overview__card-status">
+            <div class="card-status__top">
+              <span class="top__title">Total Views</span>
+              <img class="top__image" src="images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="card-status__bottom">
+              <span class="bottom__quantity">1407</span>
+              <div class="bottom__percentage">
+                <img class="percentage__image" src="images/icon-down.svg" alt="" />
+                <span class="percentage__text footer__text--red">12%</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container__overview">
-      <h1 class="overview__title">Overview - Today</h1>
-      <div class="overview__content">
-        <div class="overview__card-status">
-          <div class="card-status__top">
-            <span class="top__title">Page Views</span>
-            <img class="top__image" src="images/icon-facebook.svg" alt="">
-          </div>
-          <div class="card-status__bottom">
-            <span class="bottom__quantity">87</span>
-            <div class="bottom__percentage">
-              <img class="percentage__image" src="images/icon-up.svg" alt="">
-              <span class="percentage__text footer__text--green">3%</span>
-            </div>
-          </div>
-        </div>
-        <div class="overview__card-status">
-          <div class="card-status__top">
-            <span class="top__title">Likes</span>
-            <img class="top__image" src="images/icon-facebook.svg" alt="">
-          </div>
-          <div class="card-status__bottom">
-            <span class="bottom__quantity">52</span>
-            <div class="bottom__percentage">
-              <img class="percentage__image" src="images/icon-down.svg" alt="">
-              <span class="percentage__text footer__text--red">2%</span>
-            </div>
-          </div>
-        </div>
-        <div class="overview__card-status">
-          <div class="card-status__top">
-            <span class="top__title">Likes</span>
-            <img class="top__image" src="images/icon-instagram.svg" alt="">
-          </div>
-          <div class="card-status__bottom">
-            <span class="bottom__quantity">5462</span>
-            <div class="bottom__percentage">
-              <img class="percentage__image" src="images/icon-up.svg" alt="">
-              <span class="percentage__text footer__text--green">2257%</span>
-            </div>
-          </div>
-        </div>
-        <div class="overview__card-status">
-          <div class="card-status__top">
-            <span class="top__title">Profile Views</span>
-            <img class="top__image" src="images/icon-instagram.svg" alt="">
-          </div>
-          <div class="card-status__bottom">
-            <span class="bottom__quantity">52k</span>
-            <div class="bottom__percentage">
-              <img class="percentage__image" src="images/icon-up.svg" alt="">
-              <span class="percentage__text footer__text--green">1375%</span>
-            </div>
-          </div>
-        </div>
-        <div class="overview__card-status">
-          <div class="card-status__top">
-            <span class="top__title">Retweets</span>
-            <img class="top__image" src="images/icon-twitter.svg" alt="">
-          </div>
-          <div class="card-status__bottom">
-            <span class="bottom__quantity">117</span>
-            <div class="bottom__percentage">
-              <img class="percentage__image" src="images/icon-up.svg" alt="">
-              <span class="percentage__text footer__text--green">303%</span>
-            </div>
-          </div>
-        </div>
-        <div class="overview__card-status">
-          <div class="card-status__top">
-            <span class="top__title">Likes</span>
-            <img class="top__image" src="images/icon-twitter.svg" alt="">
-          </div>
-          <div class="card-status__bottom">
-            <span class="bottom__quantity">507</span>
-            <div class="bottom__percentage">
-              <img class="percentage__image" src="images/icon-up.svg" alt="">
-              <span class="percentage__text footer__text--green">553%</span>
-            </div>
-          </div>
-        </div>
-        <div class="overview__card-status">
-          <div class="card-status__top">
-            <span class="top__title">Likes</span>
-            <img class="top__image" src="images/icon-youtube.svg" alt="">
-          </div>
-          <div class="card-status__bottom">
-            <span class="bottom__quantity">107</span>
-            <div class="bottom__percentage">
-              <img class="percentage__image" src="images/icon-down.svg" alt="">
-              <span class="percentage__text footer__text--red">19%</span>
-            </div>
-          </div>
-        </div>
-        <div class="overview__card-status">
-          <div class="card-status__top">
-            <span class="top__title">Total Views</span>
-            <img class="top__image" src="images/icon-youtube.svg" alt="">
-          </div>
-          <div class="card-status__bottom">
-            <span class="bottom__quantity">1407</span>
-            <div class="bottom__percentage">
-              <img class="percentage__image" src="images/icon-down.svg" alt="">
-              <span class="percentage__text footer__text--red">12%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-<script src="index.js"></script>
-
+  </body>
+  <script src="index.js"></script>
 </html>
