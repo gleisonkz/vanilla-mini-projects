@@ -29,6 +29,7 @@
 .overview__title {
   color: var(--color-text);
 }
+
 body {
   height: 100%;
   width: 100%;
@@ -47,9 +48,11 @@ body {
 
   background-color: var(--background-color);
 }
+
 /* ========================================================================== /
 / CONTAINER SOCIAL MEDIA  /
 / ========================================================================== */
+
 .container__social-media {
   width: 100%;
 }
@@ -100,7 +103,6 @@ body {
 }
 
 .toggle__input:checked + .toggle__switch {
-  /* background-color: #2196f3; */
   background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
@@ -145,6 +147,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -166,10 +169,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .card__header {
   width: 105px;
   justify-content: space-between;
 }
+
 .header__text {
   font-weight: bold;
 }
@@ -192,6 +197,7 @@ body {
 .footer__image {
   margin-right: 5px;
 }
+
 .footer__text {
   font-weight: bold;
 }
@@ -211,12 +217,14 @@ body {
 /* ========================================================================== /
 / CONTAINER OVERVIEW/
 / ========================================================================== */
+
 .container__overview {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   width: 100%;
 }
+
 .overview__title {
   font-weight: bold;
   font-size: 30px;
@@ -251,9 +259,11 @@ body {
 .top__title {
   color: var(--color-title);
 }
+
 .card-status__bottom > * {
   font-weight: bold;
 }
+
 .bottom__quantity {
   font-size: 35px;
   color: var(--color-title);
@@ -264,9 +274,11 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+
 .percentage__image {
   margin-right: 5px;
 }
+
 /* ========================================================================== /
 / END-CONTAINER OVERVIEW/
 / ========================================================================== */
