@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="card">
+      <img src="./images/drawers.jpg" alt="" class="card-image" />
+      <div class="card__content">
+        <h2 class="content__title">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your home
+        </h2>
+        <p class="content__text">
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve
+          got some simple tips to help you make any room feel complete.
+        </p>
+      </div>
+      <footer>
+        <div class="card__profile">
+          <img src="images/avatar-michelle.jpg" class="profile__avatar" alt="" />
+          <div class="profile__detail">
+            <h2 class="profile__title">Michelle Appleton</h2>
+            <span class="profile__birthday"> 28 Jun 2020</span>
+          </div>
+          <button class="button profile__button">
+            <img src="images/icon-share.svg" alt="" />
+          </button>
+        </div>
+        <div class="card__share">
+          <span class="share__text">SHARE</span>
+          <img class="share__icon" src="images/icon-facebook.svg" class="profile__avatar" alt="" />
+          <img class="share__icon" src="images/icon-twitter.svg" class="profile__avatar" alt="" />
+          <img class="share__icon" src="images/icon-pinterest.svg" class="profile__avatar" alt="" />
+          <button class="button share__button">
+            <img src="images/icon-share.svg" alt="" />
+          </button>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    const $cardShare = document.querySelector(".card__share");
+    const $buttons = document.querySelectorAll("button");
+    $buttons.forEach(($button) => {
+      $button.addEventListener("click", () => {
+        $cardShare.classList.toggle("active");
+      });
+    });
+  </script>
+</html>
