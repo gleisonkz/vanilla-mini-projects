@@ -1,6 +1,6 @@
 ## 📖 About the project
 
-This project it's being developed just to practice the challenge of Frontend Mentor [FrontEndMentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)
+This project was developed just to practice the [Front End Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam) layout.
 
 ## 🤖 Technologies
 
