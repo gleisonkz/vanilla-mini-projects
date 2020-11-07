@@ -442,7 +442,7 @@ body {
   .social-media__content,
   .overview__content {
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 10px;
   }
 
