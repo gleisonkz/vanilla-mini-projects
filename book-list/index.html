@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Booklist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section class="app">
+      <header class="app__title">
+        <h1 class="title__text">
+          <i class="fas fa-book-open title__icon"></i>
+          My<span>Book</span>List
+        </h1>
+      </header>
+      <form class="form" autocomplete="off">
+        <div class="form__book-image">
+          <div class="container-book-image">
+            <input type="file" id="image-book" style="display: none" />
+            <i class="fa fa-upload" aria-hidden="true"></i>
+            <label class="btn-input-file" for="image-book">Choose File</label>
+            <span class="file-name">no file chosen</span>
+          </div>
+        </div>
+        <div class="form__book-info">
+          <div class="form__group">
+            <label class="form__label" for="title">Title</label>
+            <input type="text" id="title" name="title" class="form__control" />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="author">Author</label>
+            <input type="text" id="author" class="form__control" />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="isbn">ISBN#</label>
+            <input type="text" id="isbn" class="form__control" />
+          </div>
+          <button class="form__button" type="submit">
+            <i class="fas fa-book-medical"></i>
+            Add Book
+          </button>
+        </div>
+      </form>
+    </section>
+    <section class="book-list"></section>
+
+    <div class="snack-bar"></div>
+    <script src="classes/book.js"></script>
+    <script src="classes/store.js"></script>
+    <script src="classes/ui.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
