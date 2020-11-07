@@ -12,5 +12,4 @@ Technologies that I used to develop this project.
 
 ## 📈 My personal improvements
 
-- Layout
-  - Animation on card faq height.
+- Animation on card faq height.
