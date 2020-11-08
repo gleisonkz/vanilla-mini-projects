@@ -415,7 +415,21 @@ body {
 / DESKTOP /
 / ========================================================================== */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) and (max-width: 1165px) {
+  .card,
+  .overview__card-status {
+    max-width: 100%;
+  }
+
+  .social-media__content,
+  .overview__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1166px) {
   body {
     display: flex;
     justify-content: center;

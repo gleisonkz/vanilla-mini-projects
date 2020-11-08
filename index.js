@@ -2,21 +2,51 @@ const projects = [
   {
     name: "Social Media Dashboard",
     description: "Layout produced using css Grid Layout and FlexBox, with color theme switcher.",
-    imageName: "social-media-switcher.jpg",
-    projectPath: "social-media-dashboard-switcher/index.html",
+    imageName: "social-media-switcher.gif",
+    projectPath: "projects/social-media-dashboard-switcher/index.html",
   },
   {
     name: "FAQ Accordion Card",
     description: "State manipulation and context bind functions used to control and iterate each item of the list.",
     imageName: "faq-accordion-card.png",
-    projectPath: "faq-accordion-card-main/index.html",
+    projectPath: "projects/faq-accordion-card-main/index.html",
   },
   {
     name: "My Book List",
     description:
       "Book list build using OOP to handle form validation, local storage manipulation, async functions and images uploads.",
     imageName: "book-list.png",
-    projectPath: "book-list/index.html",
+    projectPath: "projects/book-list/index.html",
+  },
+  {
+    name: "Scroll To Element",
+    description: "",
+    imageName: "",
+    projectPath: "projects/scroll-to-element/index.html",
+  },
+  {
+    name: "Scroll Indicator",
+    description: "",
+    imageName: "",
+    projectPath: "projects/scroll-indicator/index.html",
+  },
+  {
+    name: "Full Screen Vertical Scroll",
+    description: "built using css properties to control scroll like scroll-snap-type and scroll-snap-align.",
+    imageName: "full-screen-vertical-scroll.gif",
+    projectPath: "projects/full-screen-vertical-scroll/index.html",
+  },
+  {
+    name: "Colorful Click Button",
+    description: "",
+    imageName: "",
+    projectPath: "projects/colorful-click-button/index.html",
+  },
+  {
+    name: "Article Preview Component",
+    description: "",
+    imageName: "",
+    projectPath: "projects/article-preview-component-master/index.html",
   },
 ];
 const $projectsContent = document.querySelector(".projects__content");
