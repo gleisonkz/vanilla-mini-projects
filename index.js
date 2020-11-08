@@ -45,8 +45,8 @@ const projects = [
   },
   {
     name: "Article Preview Component",
-    description: "",
-    imageName: "",
+    description: "Built using css Grid Layout and Flexbox, and toggle method of javascript to activate button.",
+    imageName: "article-preview.gif",
     projectPath: "projects/article-preview-component-master/index.html",
   },
 ];
