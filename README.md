@@ -1,4 +1,4 @@
-## Simple Projects implemented by just using pure HTML, CSS and JS
+## Simple Projects built just using pure HTML, CSS and JS
 
 <div style="display:flex;justify-content:center;align-items:center" >
 <img src="https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> <span style="font-size:50px">+</span>
