@@ -8,7 +8,7 @@ const projects = [
   {
     name: "FAQ Accordion Card",
     description: "State manipulation and context bind functions used to control and iterate each item of the list.",
-    imageName: "faq-accordion-card.png",
+    imageName: "faq-accordion-card.gif",
     projectPath: "projects/faq-accordion-card-main/index.html",
   },
   {
@@ -26,20 +26,21 @@ const projects = [
   },
   {
     name: "Scroll Indicator",
-    description: "",
-    imageName: "",
+    description: "Built using clientHeight and scrollHeight DOM elements property to calculate and animate scroll.",
+    imageName: "scroll-indicator.gif",
     projectPath: "projects/scroll-indicator/index.html",
   },
   {
     name: "Full Screen Vertical Scroll",
-    description: "built using css properties to control scroll like scroll-snap-type and scroll-snap-align.",
+    description: "Built using css properties to control scroll like scroll-snap-type and scroll-snap-align.",
     imageName: "full-screen-vertical-scroll.gif",
     projectPath: "projects/full-screen-vertical-scroll/index.html",
   },
   {
     name: "Colorful Click Button",
-    description: "",
-    imageName: "",
+    description:
+      "Button that changes its colors on every click based on an array of colors and ever returning to the beginning regardless of its size.",
+    imageName: "colorful-click-button.gif",
     projectPath: "projects/colorful-click-button/index.html",
   },
   {

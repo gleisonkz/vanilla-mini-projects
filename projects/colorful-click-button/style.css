@@ -9,6 +9,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: rgba(177, 183, 197, 0.561);
 }
 
 body {
@@ -25,14 +26,18 @@ body {
   height: 100px;
 
   font-size: 29px;
-  outline:none;
+  outline: none;
 
-  transition: background-color .2s ease-in; 
-  
+  transition: background-color 0.2s ease-in, transform 0.2s;
+
   color: white;
   cursor: pointer;
 }
 
 .btn:hover {
   opacity: 0.8;
+}
+
+.btn:active {
+  transform: scale(0.9);
 }
