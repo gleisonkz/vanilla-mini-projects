@@ -19,12 +19,6 @@ const projects = [
     projectPath: "projects/book-list/index.html",
   },
   {
-    name: "Scroll To Element",
-    description: "",
-    imageName: "",
-    projectPath: "projects/scroll-to-element/index.html",
-  },
-  {
     name: "Scroll Indicator",
     description: "Built using clientHeight and scrollHeight DOM elements property to calculate and animate scroll.",
     imageName: "scroll-indicator.gif",
