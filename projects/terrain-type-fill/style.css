@@ -9,4 +9,98 @@ html,
 body {
   height: 100%;
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  margin-top: 20px;
+  width: 700px;
+  height: 700px;
+  border: 8px solid #76888c;
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.board__square {
+  background-color: plum;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/desert.jpg);
+}
+
+.board__text {
+  display: flex;
+  font-size: 36px;
+  text-align: center;
+}
+
+.project-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-text {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bg-text--desert {
+  background: url(./images/desert.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.bg-text--forest {
+  background: url(./images/forest.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.bg-text--grass {
+  background: url(./images/grass.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.bg-text--ground {
+  background: url(./images/ground.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.bg-text--lava {
+  background: url(./images/lava.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.bg-text--rock {
+  background: url(./images/rock.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.bg-text--water {
+  background: url(./images/water.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
