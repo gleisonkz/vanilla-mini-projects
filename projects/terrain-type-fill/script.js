@@ -18,10 +18,9 @@ $inputs.forEach(($input) =>
       { name: "forest", background: "url(./images/forest.jpg)" },
       { name: "lava", background: "url(./images/lava.jpg)" },
     ];
-    const terrain = terrains.find((terrain) => terrain.name === currentValue) || defaultBackground;
+    const terrain = terrains.find((terrain) => terrain.name === currentValue);
     const currentSquaresArea = areas[areaID - 1];
-    console.log(currentSquaresArea);
-    console.log(terrain.background);
-    currentSquaresArea.forEach(($square) => ($square.style.background = terrain.background));
+
+    currentSquaresArea.forEach(($square) => ($square.style.background = terrain?.background || defaultBackground));
   })
 );
