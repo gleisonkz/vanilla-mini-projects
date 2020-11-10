@@ -16,31 +16,19 @@ body {
   align-items: center;
 }
 
-.board {
-  margin-top: 20px;
-  width: 700px;
-  height: 700px;
-  border: 8px solid #76888c;
-  display: grid;
-  gap: 4px;
-  padding: 4px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+body {
+  padding: 50px;
 }
 
-.board__square {
-  background-color: plum;
-  display: grid;
+.header {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./images/desert.jpg);
 }
 
-.board__text {
-  display: flex;
-  font-size: 36px;
-  text-align: center;
-}
+/*========================================================================== /
+/ TITLE
+/ ==========================================================================*/
 
 .title {
   display: flex;
@@ -50,7 +38,7 @@ body {
 }
 
 .bg-title {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bold;
   text-align: center;
 }
@@ -110,3 +98,121 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
 }
+
+/*========================================================================== /
+/ END-TITLE
+/ ==========================================================================*/
+
+/*========================================================================== /
+/ FORM
+/ ==========================================================================*/
+
+.form {
+  margin-top: 10px;
+  display: flex;
+  width: 600px;
+}
+
+.form__group {
+  text-align: center;
+}
+
+.form__control {
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/*========================================================================== /
+/ END-FORM
+/ ==========================================================================*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*========================================================================== /
+/ BOARD
+/ ==========================================================================*/
+
+.board {
+  margin-top: 20px;
+  width: 600px;
+  height: 600px;
+  border: 8px solid #76888c;
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.board__square {
+  background-color: plum;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/desert.jpg);
+}
+
+.board__text {
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*========================================================================== /
+/ END-BOARD
+/ ==========================================================================*/
+
+/*========================================================================== /
+/ OPTIONS
+/ ==========================================================================*/
+
+.container-options {
+  margin-top: 20px;
+  display: flex;
+}
+.option {
+  width: 112px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.option--desert .option__image {
+  background: url(./images/desert.jpg);
+}
+.option--forest .option__image {
+  background: url(./images/forest.jpg);
+}
+.option--grass .option__image {
+  background: url(./images/grass.jpg);
+}
+.option--ground .option__image {
+  background: url(./images/ground.jpg);
+}
+.option--lava .option__image {
+  background: url(./images/lava.jpg);
+}
+.option--rock .option__image {
+  background: url(./images/rock.jpg);
+}
+.option--water .option__image {
+  background: url(./images/water.jpg);
+}
+
+.option__text {
+}
+.option__image {
+  width: 60px;
+  height: 60px;
+}
+
+/*========================================================================== /
+/ END-OPTIONS
+/ ==========================================================================*/
