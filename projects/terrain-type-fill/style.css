@@ -20,10 +20,6 @@ body {
   align-items: center;
 }
 
-body {
-  padding: 50px;
-}
-
 .header {
   display: flex;
   justify-content: center;
