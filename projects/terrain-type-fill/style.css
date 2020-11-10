@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --base-bg: linear-gradient(90deg, rgba(33, 36, 35, 1) 35%, rgba(0, 0, 0, 1) 100%);
+}
+
 html,
 body {
   height: 100%;
@@ -151,11 +155,11 @@ main {
 }
 
 .board__square {
-  background-color: plum;
+  background: var(--base-bg);
   display: grid;
   justify-content: center;
   align-items: center;
-  background-image: url(./images/desert.jpg);
+  color: white;
 }
 
 .board__text {
