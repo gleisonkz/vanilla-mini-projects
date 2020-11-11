@@ -232,7 +232,7 @@ main {
 /*========================================================================== /
 / MOBILE
 / ==========================================================================*/
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 420px) {
   html,
   body {
     justify-content: flex-start;
