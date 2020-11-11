@@ -1,15 +1,21 @@
-const $squaresArea1 = document.querySelectorAll(".board__square[data-area='1']");
-const $squaresArea2 = document.querySelectorAll(".board__square[data-area='2']");
-const $squaresArea3 = document.querySelectorAll(".board__square[data-area='3']");
-const areas = [$squaresArea1, $squaresArea2, $squaresArea3];
+// const $squaresArea1 = document.querySelectorAll(".board__square[data-area='1']");
+// const $squaresArea2 = document.querySelectorAll(".board__square[data-area='2']");
+// const $squaresArea3 = document.querySelectorAll(".board__square[data-area='3']");
+// const areas = [$squaresArea1, $squaresArea2, $squaresArea3];
+const $areas = [...document.querySelectorAll(".board__square")];
+console.log(
+  "areas: ",
+  $areas.filter(($area) => $area.getAttribute("data-area") === "3")
+);
 
 const $inputs = document.querySelectorAll(".form__control");
 $inputs.forEach(($input) =>
   $input.addEventListener("keyup", ($event) => {
     const defaultBackground = "url(images/default.jpg)";
 
-    const currentValue = $event.target.value.toLowerCase();
+    const currentInputValue = $event.target.value.toLowerCase();
     const areaID = $input.getAttribute("data-area");
+
     const terrains = [
       { name: "rock", background: "url(images/rock.jpg)" },
       { name: "desert", background: "url(images/desert.jpg)" },
@@ -19,10 +25,11 @@ $inputs.forEach(($input) =>
       { name: "forest", background: "url(images/forest.jpg)" },
       { name: "lava", background: "url(images/lava.jpg)" },
     ];
-    const terrain = terrains.find((terrain) => terrain.name === currentValue);
-    const currentSquaresArea = areas[areaID - 1];
+    const terrain = terrains.find((terrain) => terrain.name === currentInputValue);
+    const $currentSquaresArea = $areas.filter(($area) => $area.getAttribute("data-area") === areaID);
+    console.log($currentSquaresArea);
 
-    currentSquaresArea.forEach(($square) => {
+    $currentSquaresArea.forEach(($square) => {
       const nextBackground = terrain?.background || defaultBackground;
       nextBackground !== getElementBackgroundUrl($square) &&
         debounce(() => applyBackgroundTransitionEffect($square, nextBackground), 600)();
