@@ -159,7 +159,7 @@ main {
 }
 
 .board__square {
-  background: url("images/default.jpg");
+  background: url("images/default.jpg") 100% 100% / cover;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -194,25 +194,25 @@ main {
   justify-items: center;
 }
 .option--desert .option__image {
-  background: url(./images/desert.jpg);
+  background: url(./images/desert.jpg) 0 0 / cover;
 }
 .option--forest .option__image {
-  background: url(./images/forest.jpg);
+  background: url(./images/forest.jpg) 0 0 / cover;
 }
 .option--grass .option__image {
-  background: url(./images/grass.jpg);
+  background: url(./images/grass.jpg) 0 0 / cover;
 }
 .option--ground .option__image {
-  background: url(./images/ground.jpg);
+  background: url(./images/ground.jpg) 0 0 / cover;
 }
 .option--lava .option__image {
-  background: url(./images/lava.jpg);
+  background: url(./images/lava.jpg) 0 0 / cover;
 }
 .option--rock .option__image {
-  background: url(./images/rock.jpg);
+  background: url(./images/rock.jpg) 0 0 / cover;
 }
 .option--water .option__image {
-  background: url(./images/water.jpg);
+  background: url(./images/water.jpg) 0 0 / cover;
 }
 
 .option__text {
@@ -233,21 +233,21 @@ main {
 / MOBILE
 / ==========================================================================*/
 @media screen and (max-width: 729px) {
+  html,
+  body {
+    justify-content: flex-start;
+  }
+
   body {
     padding: 20px;
   }
   .board {
-    border: 8px solid #76888c;
-    display: grid;
-    gap: 4px;
-    padding: 4px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    border: 4px solid #76888c;
+    width: 301px;
+    height: 275px;
   }
 
   .board__square {
-    width: 90px;
-    height: 90px;
   }
 
   .board__text {
@@ -262,5 +262,40 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form__control {
+    width: 90px;
+  }
+  .form__group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .option {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .option + .option {
+    margin-left: 3px;
+  }
+
+  .option__image {
+    width: 45px;
+    height: 45px;
   }
 }

@@ -37,6 +37,7 @@ function applyBackgroundTransitionEffect($square, background) {
   $square.style.opacity = "0";
   setTimeout(() => {
     $square.style.background = background;
+    $square.style.backgroundSize = "cover";
     $square.style.opacity = "1";
   }, 400);
 }
