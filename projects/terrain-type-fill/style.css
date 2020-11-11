@@ -225,6 +225,42 @@ main {
   height: 60px;
 }
 
-/*========================================================================== /
+/*==========================================================================/
 / END-OPTIONS
 / ==========================================================================*/
+
+/*========================================================================== /
+/ MOBILE
+/ ==========================================================================*/
+@media screen and (max-width: 729px) {
+  body {
+    padding: 20px;
+  }
+  .board {
+    border: 8px solid #76888c;
+    display: grid;
+    gap: 4px;
+    padding: 4px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .board__square {
+    width: 90px;
+    height: 90px;
+  }
+
+  .board__text {
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .container-options {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

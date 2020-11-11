@@ -34,7 +34,6 @@ function changeBackground($input) {
 }
 
 function applyBackgroundTransitionEffect($square, background) {
-  console.log("applyBackgroundTransitionEffect");
   $square.style.opacity = "0";
   setTimeout(() => {
     $square.style.background = background;
