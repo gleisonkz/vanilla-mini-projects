@@ -13,7 +13,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-
+  background: linear-gradient(90deg, rgb(56 42 44) 35%, rgb(22, 22, 22) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,6 +121,10 @@ body {
   text-align: center;
 }
 
+.form__label {
+  color: white;
+}
+
 .form__control {
   border: 1px solid #000;
   padding: 10px;
@@ -144,8 +148,8 @@ main {
 
 .board {
   margin-top: 20px;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border: 8px solid #76888c;
   display: grid;
   gap: 4px;
@@ -155,11 +159,12 @@ main {
 }
 
 .board__square {
-  background: var(--base-bg);
+  background: url("images/default.jpg");
   display: grid;
   justify-content: center;
   align-items: center;
   color: white;
+  transition: opacity 0.6s;
 }
 
 .board__text {
@@ -211,6 +216,9 @@ main {
 }
 
 .option__text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: white;
 }
 .option__image {
   width: 60px;
