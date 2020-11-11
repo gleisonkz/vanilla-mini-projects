@@ -1,4 +1,6 @@
 const $areas = [...document.querySelectorAll(".board__square")];
+const $inputs = document.querySelectorAll(".form__control");
+const $optionsContainer = document.querySelector(".container-options");
 const defaultBackground = "url(images/default.jpg)";
 const terrains = [
   { name: "rock", background: "url(images/rock.jpg)" },
@@ -8,10 +10,10 @@ const terrains = [
   { name: "ground", background: "url(images/ground.jpg)" },
   { name: "forest", background: "url(images/forest.jpg)" },
   { name: "lava", background: "url(images/lava.jpg)" },
-  { name: "default", background: "url(images/default.jpg)" },
 ];
 
-const $inputs = document.querySelectorAll(".form__control");
+addOptionsInHTML(terrains, $optionsContainer);
+
 $inputs.forEach(($input) =>
   $input.addEventListener(
     "keyup",
@@ -36,8 +38,7 @@ function changeBackground($input) {
 function applyBackgroundTransitionEffect($square, background) {
   $square.style.opacity = "0";
   setTimeout(() => {
-    $square.style.background = background;
-    $square.style.backgroundSize = "cover";
+    $square.style.background = `${background} 0 0 / cover`;
     $square.style.opacity = "1";
   }, 400);
 }
@@ -58,4 +59,23 @@ function debounce(callback, timeout = 300) {
 
     timer = setTimeout(() => callback(...args), timeout);
   };
+}
+
+function addOptionsInHTML(options, $optionsContainer) {
+  options.forEach((option) => {
+    const $option = createElementWithClass(
+      "div",
+      `option option--${option.name}`,
+      `<div class="option__image"></div>
+       <span class="option__text">${option.name}</span>`
+    );
+    $optionsContainer.appendChild($option);
+  });
+}
+
+function createElementWithClass(selector, className, innerHTML) {
+  const $element = document.createElement(selector);
+  $element.className = className;
+  $element.innerHTML = innerHTML;
+  return $element;
 }
