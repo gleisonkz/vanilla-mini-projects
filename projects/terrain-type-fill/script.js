@@ -47,7 +47,7 @@ function getElementBackgroundUrl($element) {
   return url;
 }
 
-function debounce(func, timeout = 300) {
+function debounce(callback, timeout = 300) {
   let timer;
 
   return (...args) => {
@@ -55,6 +55,6 @@ function debounce(func, timeout = 300) {
       clearTimeout(timer);
     }
 
-    timer = setTimeout(() => func(...args), timeout);
+    timer = setTimeout(() => callback(...args), timeout);
   };
 }
