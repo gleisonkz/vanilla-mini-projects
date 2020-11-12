@@ -45,7 +45,7 @@ function applyBackgroundTransitionEffect($square, background) {
 
 function getElementBackgroundUrl($element) {
   let url = window.getComputedStyle($element, false).backgroundImage;
-  url = "url(" + url.split("/").splice(5, 2).join("/").replace('.jpg"', ".jpg");
+  url = "url(" + url.split("/").splice(4, 2).join("/").replace('.jpg"', ".jpg");
   return url;
 }
 
