@@ -43,6 +43,12 @@ const projects = [
     imageName: "article-preview.gif",
     projectPath: "projects/article-preview-component-master/index.html",
   },
+  {
+    name: "Terrain Type Fill",
+    description: "Built using css Grid Layout and Flexbox, debounce function and custom background image animation.",
+    imageName: "type-terrain-fill.gif",
+    projectPath: "projects/terrain-type-fill/index.html",
+  },
 ];
 const $projectsContent = document.querySelector(".projects__content");
 const $html = document.querySelector("html");
